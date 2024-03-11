@@ -1,0 +1,317 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #EFEFEF;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.column1 {
+  width: 40%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column2 {
+  width: 60%;
+  background-color: #FF892F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF892F;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #bd5505;
+}
+
+.login-form img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.column2 img{
+  width: 60%;
+}
+
+.navbar {
+  background-color: #ffffff; 
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo img {
+  width: 100px; 
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.menu ul li a.active {
+  color: #FF892F; 
+}
+
+.user {
+  display: inline-block;
+  padding: 5px 15px; 
+  border-radius: 25px;
+  background-color: #FF892F;
+}
+
+.user span {
+  font-size: 100%;
+  color: white; 
+}
+
+.logout-button {
+  background-color: red;
+  color: #fff; 
+  padding: 5px 15px; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 100%;
+  margin-left: 15px;
+}
+
+.content {
+  padding: 20px;
+  text-align: center; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.content h2{
+  color: #FF892F;
+}
+
+.registration-text {
+  background-color: #FF892F;
+  border-radius: 15px;
+  overflow: hidden; /* จัดการเพื่อให้ข้อความอยู่ภายในพื้นที่ */
+  width: 100%; /* ทำให้ขนาดพื้นที่เท่ากับข้อความ */
+  display: inline-block; /* จัดให้พื้นที่ปรับตามข้อความ */
+}
+
+.text-container {
+  padding: 10px; /* การเพิ่มระยะห่างรอบ ๆ ข้อความ */
+  color: white;
+  font-size: 24px;
+}
+
+.course-form {
+  max-width: 30%;
+  margin: 0 auto; 
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 5%;
+}
+
+.course-form h2{
+  color: #FF892F;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+select:focus {
+  outline: none; 
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #FF892F;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #bd5505;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; 
+  border-radius: 15px;
+  table-layout: fixed; 
+}
+
+.course-table th, .course-table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  width: 25%; 
+}
+
+.course-table tfoot input[type="text"] {
+  width: 90%;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e7e7e7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.course-table th:nth-child(2),
+.course-table td:nth-child(2) {
+    width: 40%; /* กำหนดความกว้างของ column2 เป็น 40% */
+}
+
+.course-table input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.course-table th:first-child, .course-table td:first-child {
+  min-width: 120px;
+}
+
+.course-table th:last-child, .course-table td:last-child {
+  text-align: center;
+  width: 20%;
+}
+
+.withdraw-button {
+  background-color: #ff0000; 
+  color: #fff; 
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.withdraw-button:hover {
+  background-color: #cc0000; 
+}
+
+.confirm-button {
+  background-color: #FF892F;
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 24px;
+}
+
+.confirm-button:hover {
+  background-color: #bd5505; 
+}
+
+.unit span {
+  display: inline-block;
+  padding: 8px 16px;
+  color: white; 
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.allunit{
+  background-color: #FF892F;
+}
+
+.unitnow{
+  background-color: #28C956;
+}
+
+.balanceunit{
+  background-color: #F32D44;
+}
